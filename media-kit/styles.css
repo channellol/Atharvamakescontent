@@ -1459,6 +1459,28 @@ body {
     box-shadow: 1.5px 1.5px 0px #111;
   }
 
+  /* Keep the hero inside the viewport (inline styles on the Instagram card need !important) */
+  .browser-content { padding: 1rem; }
+  .hero-text-area { width: 100%; min-width: 0; }
+  .insta-profile-card {
+    max-width: 100% !important;
+    padding: 0.5rem 0.7rem !important;
+    gap: 8px !important;
+  }
+  .insta-avatar-gradient { width: 36px !important; height: 36px !important; padding: 2px !important; }
+  .insta-badge-handle { font-size: 0.8rem !important; }
+  .insta-badge-subtitle { font-size: 0.68rem !important; }
+  .insta-follow-btn {
+    font-size: 0.75rem !important;
+    padding: 0.2rem 0.5rem !important;
+    margin-left: 2px !important;
+  }
+  .sticky-board, .collab-cards { justify-content: center; }
+
+  .browser-toolbar { gap: 0.5rem; padding: 0.5rem; }
+  .search-bar-container, .search-bar input { min-width: 0; }
+  .nav-btn { width: 28px; height: 28px; }
+
   .tabs { gap: 2px; }
   .tab { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
   .email-btn {

@@ -62,14 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ideasModal.classList.add('hidden');
   });
 
-  // Media Kit Link Logic
-  const mediaKitTrigger = document.getElementById('media-kit-trigger');
-  if (mediaKitTrigger) {
-    mediaKitTrigger.addEventListener('click', () => {
-      window.open('https://drive.google.com/file/d/1FmDAKEw1vJO_vkd7cucYZg5CC7WPMqGi/view?usp=sharing', '_blank');
-    });
-  }
-
   // Close modal when clicking outside of the window
   ideasModal.addEventListener('click', (e) => {
     if (e.target === ideasModal) {
