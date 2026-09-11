@@ -724,6 +724,38 @@ body {
   color: var(--text-primary);
 }
 
+/* Carousels */
+.carousel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+}
+.carousel-thumb {
+  height: auto;
+  aspect-ratio: 4 / 5;
+}
+.carousel-icon {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+}
+.slide-dots {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 4px;
+}
+.slide-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  background-color: rgba(255,255,255,0.5);
+}
+.slide-dots span:first-child { background-color: white; }
+
 /* Comment Engine note */
 .comment-engine h3 {
   font-family: var(--font-header);
