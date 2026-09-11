@@ -657,29 +657,6 @@ body {
   background-position: center;
 }
 
-/* Fallback CSS Thumbnails for Reels */
-.claude {
-  background: linear-gradient(135deg, #1e1e1e 0%, #4a2d6b 100%);
-}
-.solvely {
-  background: linear-gradient(135deg, #f4d35e 0%, #2a9d8f 100%);
-  color: #111;
-}
-.swishy {
-  background: linear-gradient(135deg, #e76f51 0%, #e9c46a 100%);
-  color: #111;
-}
-.parakeet {
-  background: linear-gradient(135deg, #111111 0%, #2ecc71 100%);
-}
-
-/* Internship Reels Thumbnails */
-.template { background: linear-gradient(135deg, #FF6B6B 0%, #C44D58 100%); }
-.claude-cm { background: linear-gradient(135deg, #4A90E2 0%, #50E3C2 100%); color: #111;}
-.hunt { background: linear-gradient(135deg, #F5A623 0%, #F8E71C 100%); color: #111; }
-.hyd { background: linear-gradient(135deg, #7ED321 0%, #417505 100%); }
-.blr { background: linear-gradient(135deg, #9013FE 0%, #BD10E0 100%); }
-
 .play-btn {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
@@ -701,9 +678,69 @@ body {
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
 }
-.solvely .reel-label, .swishy .reel-label {
+.reels-window .reel-label {
+  font-size: 0.95rem;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+
+/* Featured Reels Thumbnails */
+.g-offers { background: linear-gradient(135deg, #E76F51 0%, #9B2C1F 100%); }
+.g-map { background: linear-gradient(135deg, #4F6D7A 0%, #1D3540 100%); }
+.g-tcs { background: linear-gradient(135deg, #F4D35E 0%, #E9A23B 100%); color: #111; }
+.g-hiring { background: linear-gradient(135deg, #2A9D8F 0%, #145C54 100%); }
+.g-copilot { background: linear-gradient(135deg, #111111 0%, #E76F51 100%); }
+.g-workshop { background: linear-gradient(135deg, #FFF5E6 0%, #E5D0B5 100%); color: #111; }
+.g-tcs .reel-label, .g-workshop .reel-label {
   text-shadow: none;
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.5);
+}
+
+.reel-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #FFFF00;
+  color: #111;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border: 1.5px solid #111;
+  border-radius: 3px;
+  box-shadow: 1.5px 1.5px 0px #111;
+  transform: rotate(-2deg);
+}
+
+.reel-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0.6rem;
+  background-color: white;
+  border-top: var(--border-thick);
+  font-family: monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Comment Engine note */
+.comment-engine h3 {
+  font-family: var(--font-header);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.comment-engine p { margin-bottom: 0.75rem; font-family: var(--font-body); }
+.comment-engine .engine-stat {
+  font-family: monospace;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.comment-engine .engine-note {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0.75rem 0 0;
 }
 
 /* --- PAGE 3: BRANDS --- */
